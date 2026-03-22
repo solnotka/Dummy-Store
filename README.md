@@ -8,7 +8,7 @@
 Роутинг: **React Router 7**\
 Библиотека UI: **ANT Design 6**\
 Формы и валидация: **React Hook Form 7, Zod 4**\
-Источник данных: [DummyJSON](https://dummyjson.com/)\
+Источник данных: [DummyJSON](https://dummyjson.com/)
 
 ## Команды
 
