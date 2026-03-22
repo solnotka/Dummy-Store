@@ -2,13 +2,13 @@
 Демонстрационный проект с реализацией авторизации пользователя, отображением грида товаров и формы добавления товара в БД.
 
 # Сборка
-Приложение на **React 19** и **TypeScript 5**
-Сборка: [Vite](https://vite.dev/)
-Стейт-менеджер: **Redux Toolkit 2**
-Роутинг: **React Router 7**
-Библиотека UI: **ANT Design 6**
-Формы и валидация: **React Hook Form 7, Zod 4**
-Источник данных: [DummyJSON](https://dummyjson.com/)
+Приложение на **React 19** и **TypeScript 5**\
+Сборка: [Vite](https://vite.dev/)\
+Стейт-менеджер: **Redux Toolkit 2**\
+Роутинг: **React Router 7**\
+Библиотека UI: **ANT Design 6**\
+Формы и валидация: **React Hook Form 7, Zod 4**\
+Источник данных: [DummyJSON](https://dummyjson.com/)\
 
 ## Команды
 
