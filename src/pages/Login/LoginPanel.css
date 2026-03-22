@@ -1,0 +1,32 @@
+.login-panel {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 515px;
+  min-height: 703px;
+  border-radius: 40px;
+  background: #ffffff;
+  border: 1px solid #ededed;
+  box-shadow: 0 24px 32px rgba(0, 0, 0, 0.04);
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-panel-shell {
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  padding: 48px 0 0;
+  border-radius: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid transparent;
+  background:
+    linear-gradient(to bottom, rgba(35, 35, 35, 0.03) 0%, rgba(35, 35, 35, 0) 50%) padding-box,
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(to bottom, #ededed 0%, #ededed 20%, rgba(237, 237, 237, 0) 100%) border-box;
+  background-clip: padding-box, padding-box, border-box;
+}

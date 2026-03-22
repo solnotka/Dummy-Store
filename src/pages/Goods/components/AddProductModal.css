@@ -1,0 +1,13 @@
+.add-product-modal__price {
+  width: 100%;
+}
+
+.add-product-modal__actions {
+  margin-bottom: 0;
+}
+
+.add-product-modal__actions .ant-form-item-control-input-content {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

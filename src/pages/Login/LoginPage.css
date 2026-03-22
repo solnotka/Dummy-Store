@@ -1,0 +1,237 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  background: #f0f1f4;
+}
+
+.login-page__logo {
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page__logo img {
+  display: block;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.login-page__title {
+  margin: 32px 0 8px;
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(22px, 2.35vw + 1.375rem, 40px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: #232323;
+}
+
+.login-page__subtitle {
+  margin: 0;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #e0e0e0;
+}
+
+.login-page__form {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 32px;
+}
+
+.login-page__form.ant-form-vertical .ant-form-item-label {
+  padding-bottom: 4px;
+}
+
+.login-page__form .ant-form-item-label > label {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+  color: #232323;
+}
+
+.login-page__form .ant-input-affix-wrapper {
+  min-height: 55px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1.5px solid #ededed;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.login-page__form .ant-input-affix-wrapper .ant-input {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+  color: #232323;
+}
+
+.login-page__form .ant-input-affix-wrapper .ant-input::placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: rgba(35, 35, 35, 0.4);
+}
+
+.login-page__form .ant-input-affix-wrapper .ant-input:focus {
+  box-shadow: none;
+}
+
+.login-page__form .ant-input-prefix {
+  margin-inline-end: 14px;
+}
+
+.login-page__form .ant-input-prefix .anticon,
+.login-page__form .ant-input-suffix .anticon {
+  width: 24px;
+  height: 24px;
+  color: #c9c9c9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page__form .ant-input-prefix .anticon svg,
+.login-page__form .ant-input-suffix .anticon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.login-page__form .ant-input-suffix {
+  margin-inline-start: 14px;
+}
+
+.login-page__field-password.ant-form-item {
+  margin-bottom: 0;
+}
+
+.login-page__remember.ant-form-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.login-page__form .login-page__remember .ant-checkbox-wrapper {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #9c9c9c;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-page__form .login-page__remember.ant-checkbox-wrapper-in-form-item .ant-checkbox-input {
+  width: 24px;
+  height: 24px;
+}
+
+.login-page__form .login-page__remember .ant-checkbox:not(.ant-checkbox-checked) {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ededed;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.login-page__form .login-page__remember .ant-checkbox-checked:not(.ant-checkbox-disabled) {
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+.login-page__form .login-page__remember .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox:not(.ant-checkbox-checked),
+.login-page__form .login-page__remember .ant-checkbox:not(.ant-checkbox-disabled):not(.ant-checkbox-checked):hover {
+  border-color: #ededed;
+}
+
+.login-page__form .login-page__remember .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled),
+.login-page__form .login-page__remember .ant-checkbox-checked:not(.ant-checkbox-disabled):hover {
+  border-color: transparent;
+}
+
+.login-page__form .login-page__submit.ant-btn.ant-btn-color-primary.ant-btn-variant-solid.ant-btn-lg {
+  box-sizing: border-box;
+  border: 1px solid #367aff;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.12) 100%);
+  letter-spacing: -0.01em;
+}
+
+.login-page__form
+  .login-page__submit.ant-btn.ant-btn-color-primary.ant-btn-variant-solid.ant-btn-lg:not(:disabled):hover {
+  border-color: #4d86ff;
+}
+
+.login-page__form
+  .login-page__submit.ant-btn.ant-btn-color-primary.ant-btn-variant-solid.ant-btn-lg:not(:disabled):active {
+  border-color: #367aff;
+}
+
+.login-page__divider.ant-divider-horizontal {
+  min-width: 0 !important;
+}
+
+.login-page__divider {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 16px !important;
+  margin-bottom: 20px !important;
+  color: #ededed;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.login-page__divider .ant-divider-inner-text {
+  color: #ebebeb;
+}
+
+.login-page__footer {
+  width: 100%;
+  max-width: 400px;
+  margin-top: auto;
+  margin-bottom: 47px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #6c6c6c;
+}
+
+.login-page__footer a {
+  font-weight: 600;
+  line-height: 1.5;
+  color: #242edb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.login-page__footer a:hover {
+  color: #1c26c4;
+}

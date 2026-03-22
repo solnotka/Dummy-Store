@@ -1,0 +1,123 @@
+.goods-page-header-panel {
+  --goods-header-search-h: 48px;
+  --goods-header-search-margin-block: 26px;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 30px;
+  box-sizing: border-box;
+}
+
+.goods-page-header__sizer {
+  flex-shrink: 0;
+  width: 100%;
+  min-height: calc(
+    var(--goods-header-search-margin-block) * 2 + var(--goods-header-search-h)
+  );
+  pointer-events: none;
+}
+
+.goods-page-header {
+  display: contents;
+}
+
+.goods-page-header__title {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.goods-page-header__search-rail {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.goods-page-header__search-rail .goods-page-header__search-wrap {
+  pointer-events: auto;
+  width: 50%;
+  max-width: calc(100% - 48px);
+  margin-block: var(--goods-header-search-margin-block);
+  box-sizing: border-box;
+}
+
+.goods-page-header__search.ant-input-affix-wrapper,
+.goods-page-header__search.ant-input-affix-wrapper input {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.goods-page-header__search.ant-input-affix-wrapper.ant-input-affix-wrapper-lg {
+  min-height: var(--goods-header-search-h);
+  height: var(--goods-header-search-h);
+  box-sizing: border-box;
+  padding-inline-start: 20px;
+  padding-block: calc(
+    (var(--goods-header-search-h) - 24px - 2px) / 2
+  );
+}
+
+.goods-page-header__search.ant-input-affix-wrapper input::placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+.goods-page-header__search .ant-input-prefix {
+  margin-inline-end: 8px;
+}
+
+.goods-page-header__search-icon,
+.goods-page-header__search .ant-input-prefix .anticon {
+  color: #999999;
+}
+
+@media (max-width: 768px) {
+  .goods-page-header__sizer {
+    display: none;
+  }
+
+  .goods-page-header-panel {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .goods-page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 14px;
+  }
+
+  .goods-page-header__title {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+
+  .goods-page-header__search-rail {
+    position: static;
+    inset: auto;
+    display: block;
+    pointer-events: auto;
+  }
+
+  .goods-page-header__search-rail .goods-page-header__search-wrap {
+    width: 100%;
+    max-width: none;
+  }
+}

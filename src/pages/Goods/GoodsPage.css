@@ -1,0 +1,218 @@
+.goods-page {
+  flex: 1;
+  min-height: 0;
+  background: #f6f6f6;
+}
+
+.goods-page__container {
+  width: 100%;
+  max-width: 1728px;
+  margin: 0 auto;
+  padding: 32px 40px 48px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (min-width: 769px) {
+  .goods-page__container .goods-panel.goods-page-header-panel {
+    width: 80vw;
+    max-width: 100%;
+    align-self: flex-start;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .goods-page__container {
+    max-width: 100%;
+    padding: 16px 12px 28px;
+    gap: 20px;
+  }
+}
+
+.goods-table__name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.goods-table__name-cell .ant-image {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.goods-table__name-cell .ant-image-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.goods-table__name-text {
+  min-width: 0;
+}
+
+.goods-table__name-title {
+  font-family: 'Cairo', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #161919;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.goods-table__name-category {
+  margin-top: 0;
+  font-family: 'Cairo', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #b2b3b9;
+}
+
+.goods-table__vendor {
+  font-family: 'Open Sans', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.goods-table__sku {
+  font-family: 'Open Sans', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.goods-table__rating {
+  font-family: 'Open Sans', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.goods-table__rating-value {
+  color: #000000;
+}
+
+.goods-table__rating-value--low {
+  color: #f11010;
+}
+
+.goods-table__rating-suffix {
+  color: #000000;
+}
+
+.goods-table__price {
+  font-family: 'Roboto Mono', ui-monospace, monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.goods-table__price-int {
+  color: #222222;
+}
+
+.goods-table__price-frac {
+  color: #999999;
+}
+
+.goods-table__action-primary.ant-btn.ant-btn-primary.ant-btn-icon-only.ant-btn-sm {
+  width: 52px;
+  min-width: 52px;
+  height: 27px;
+  padding: 1px 4px;
+  gap: 10px;
+  border-radius: 23px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  background: #242edb;
+  border-color: #242edb;
+  color: #ffffff;
+}
+
+.goods-table__action-primary.ant-btn.ant-btn-primary.ant-btn-icon-only.ant-btn-sm .anticon {
+  font-size: 18px;
+  line-height: 1;
+  width: 18px;
+  height: 18px;
+  color: #ffffff;
+}
+
+.goods-table__action-primary.ant-btn.ant-btn-primary.ant-btn-icon-only.ant-btn-sm .anticon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.goods-table__action-primary.ant-btn.ant-btn-primary.ant-btn-icon-only.ant-btn-sm:not(:disabled):hover,
+.goods-table__action-primary.ant-btn.ant-btn-primary.ant-btn-icon-only.ant-btn-sm:not(:disabled):focus-visible {
+  background: #242edb;
+  border-color: #242edb;
+  color: #fff;
+}
+
+.goods-table__action-more.ant-btn.ant-btn-default.ant-btn-circle.ant-btn-icon-only.ant-btn-sm {
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  padding: 0;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 2px solid #b2b3b9;
+  background: transparent;
+  box-shadow: none;
+  color: #b2b3b9;
+}
+
+.goods-table__action-more.ant-btn.ant-btn-default.ant-btn-circle.ant-btn-icon-only.ant-btn-sm .anticon {
+  font-size: 16px;
+  line-height: 1;
+  width: 16px;
+  height: 16px;
+  color: #b2b3b9;
+}
+
+.goods-table__action-more.ant-btn.ant-btn-default.ant-btn-circle.ant-btn-icon-only.ant-btn-sm .anticon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.goods-table__action-more.ant-btn.ant-btn-default.ant-btn-circle.ant-btn-icon-only.ant-btn-sm .anticon svg path {
+  stroke: currentColor;
+  stroke-width: 44;
+  paint-order: stroke fill;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.goods-table__action-more.ant-btn.ant-btn-default.ant-btn-circle.ant-btn-icon-only.ant-btn-sm:not(:disabled):hover,
+.goods-table__action-more.ant-btn.ant-btn-default.ant-btn-circle.ant-btn-icon-only.ant-btn-sm:not(:disabled):focus-visible {
+  background: transparent;
+  border-color: #b2b3b9;
+  color: #b2b3b9;
+}
